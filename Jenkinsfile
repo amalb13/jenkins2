@@ -3,14 +3,14 @@ pipeline {
 
     tools {
     maven 'maven'
-    jdk 'jdk-21'
+    jdk 'jdk21'
 }
 
 
     stages {
         stage('Checkout Code') {
             steps {
-                git branch: 'main', url: 'https://github.com/SupriyaJoshi2022-github/expt4_devops.git'
+                git branch: 'main', url: 'https://github.com/amalb13/jenkins2'
                  
             }
         }
